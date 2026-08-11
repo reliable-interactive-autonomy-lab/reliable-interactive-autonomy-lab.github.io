@@ -14,7 +14,7 @@ We build robots and AI agents that **learn from the people they work with**, **k
 
 Three questions drive us:
 
-- **How should a robot ask?** Human time and attention are scarce. We design algorithms that decide *when* to query a person, *what* to ask, and when to just act — so that a robot learning on the job never overburdens its partner.
+- **How should a robot ask?** Human time and attention are scarce. We design algorithms that decide *when* to query a person, *what* to ask, and when to just act, so that a robot learning on the job never overburdens its partner.
 - **How should a robot know when it is wrong?** We give learned policies statistically rigorous notions of uncertainty, so a robot can recognize the moment it has left familiar territory and hand control back before it fails.
 - **How should a robot and a person align?** Collaboration is bidirectional. We study how robots can infer human strategies and preferences, and how they can explain their own behavior so people can predict and trust them.
 
