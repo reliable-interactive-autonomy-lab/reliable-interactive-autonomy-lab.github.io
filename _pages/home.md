@@ -1,50 +1,41 @@
 ---
-title: "Allan Lab - Home"
+title: "RIA Lab - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University &rarr; LMU."
+excerpt: "Reliable Interactive Autonomy Lab at Indiana University Bloomington."
 sitemap: false
 permalink: /
 ---
 
-**News: Our group moved to the University of Munich (LMU)!** Join us! 
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/site-logo.png" alt="RIA Lab logo" class="lab-logo" />
 
-We are a dynamic research group at [LMU physics](https://www.physik.lmu.de/en/index.html) and at the [Leiden Institute of Physics](http://www.physics.leidenuniv.nl/). 
+We are the **Reliable Interactive Autonomy (RIA) Lab** in the [Luddy School of Informatics, Computing, and Engineering](https://luddy.indiana.edu/) at [Indiana University Bloomington](https://www.indiana.edu/).
 
-We have two overarching goals: first, 
-**to understand quantum materials**, including strange metals, high-temperature superconductors, and quantum critical electron matter. Second, **to make novel and useful materials** that never existed before, like possible room-temperature superconductors. 
-To achieve these goals, we develop new quantum sensing and quantum imaging instrumentation to obtain the key quantum mechanical degrees of freedom. We want to build the perfect instruments to answer the scientific questions we deem most important. 
+We build robots and AI agents that **learn from the people they work with**, **know what they don't know**, and **collaborate reliably** over long horizons. Our work sits at the intersection of **interactive machine learning**, **uncertainty quantification**, and **human-robot interaction**.
+
+Three questions drive us:
+
+- **How should a robot ask?** Human time and attention are scarce. We design algorithms that decide *when* to query a person, *what* to ask, and when to just act — so that a robot learning on the job never overburdens its partner.
+- **How should a robot know when it is wrong?** We give learned policies statistically rigorous notions of uncertainty, so a robot can recognize the moment it has left familiar territory and hand control back before it fails.
+- **How should a robot and a person align?** Collaboration is bidirectional. We study how robots can infer human strategies and preferences, and how they can explain their own behavior so people can predict and trust them.
+
+Our long-term goal is **lifelong, collaborative intelligence**: robotic partners that keep learning through strategic interaction with the people around them, across tasks and across years.
+
+<!--
+  To add a rotating image banner, drop images in images/slider7001400/ and
+  uncomment the carousel block below, adding one <li> and one <div class="item">
+  per image.
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover" >
-    <!-- Menu -->
     <ol class="carousel-indicators">
         <li data-target="#carousel" data-slide-to="0" class="active"></li>
         <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-        <li data-target="#carousel" data-slide-to="3"></li>
-        <li data-target="#carousel" data-slide-to="4"></li>
-        <li data-target="#carousel" data-slide-to="5"></li>
-        <li data-target="#carousel" data-slide-to="6"></li>
     </ol>
-
-    <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/QPI_Rh.jpg" alt="Slide 1" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/YOUR_IMAGE_1.jpg" alt="Slide 1" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/SmartTipSide.jpg" alt="Slide 2" />
-        </div>
-        <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/SaphireSTM2.jpg" alt="Slide 3" />
-        </div>
-        <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/lab.jpg" alt="Slide 4" />
-        </div>
-        <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/Fig_Science_Web.jpg" alt="Slide 5" />
-        </div>       
-         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/BSCCO2gap2.jpg" alt="Slide 6" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/YOUR_IMAGE_2.jpg" alt="Slide 2" />
         </div>
     </div>
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
@@ -56,20 +47,18 @@ To achieve these goals, we develop new quantum sensing and quantum imaging instr
     <span class="sr-only">Next</span>
   </a>
 </div>
+-->
 
+### We are recruiting!
 
-We are currently building up our instruments right in the center of Munich, in the *Sommerfeldkeller*, where Sommerfeld and Röntgen worked. We will exchange ideas with world class groups working in quantum physics, cold-atom many-body physics, and 2d quantum materials. We are also a proud member of the [SuperC consortium](https://superc2033.com/our-team/).
+Our first PhD students join in Fall 2026, and **we are looking for more PhD students, Master's students, and undergraduates** who are excited about robotics, interactive machine learning, and human-AI interaction. See [how to join us]({{ site.url }}{{ site.baseurl }}/join/) for details.
 
-**We are looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)](https://www.allanlab.org/vacancies) **!**
-
-
-
-
+<!--
+  Add funder / institutional logos here once the image files are in
+  images/logopic/, e.g.:
 
 <figure class="fifth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/LMU_logo.png" style="width: 130px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_Leiden.jpg" style="width: 140px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Tschira.png" style="width: 150px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Logo_ERC.jpg" style="width: 100px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/SuperC_logo.png" style="width: 100px">
+  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/iu_luddy.png" style="width: 220px">
 </figure>
+-->
+

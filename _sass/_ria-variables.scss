@@ -1,0 +1,41 @@
+// RIA Lab theme overrides
+// -----------------------------------------------------
+// Imported *before* bootstrap/variables so that every `!default`
+// declaration downstream picks these values up instead.
+
+//== Colors: IU crimson instead of the template's blue
+$ria-crimson:           #990000;   // Indiana University crimson
+$ria-crimson-dark:      #7a0000;
+$ria-crimson-light:     #c62828;
+
+$brand-primary:         $ria-crimson;
+$brand-danger:          $ria-crimson-light;
+
+$link-color:            $ria-crimson;
+$link-hover-color:      $ria-crimson-dark;
+
+//== Typography: Palatino everywhere
+// Covers macOS (Palatino), Windows (Palatino Linotype / Book Antiqua),
+// and Linux (URW Palladio L / P052), with Georgia as the final fallback.
+$font-family-palatino: "Palatino Linotype", "Book Antiqua", Palatino,
+                       "URW Palladio L", "P052", Georgia, "Times New Roman", serif;
+
+$font-family-sans-serif:  $font-family-palatino;
+$font-family-serif:       $font-family-palatino;
+$font-family-base:        $font-family-palatino;
+$headings-font-family:    $font-family-palatino;
+
+// Palatino runs small at a given px size; nudge the base up a touch.
+$font-size-base:          17px;
+$line-height-base:        1.55;
+
+// Bootswatch pulls Source Sans Pro from Google Fonts; we don't need it.
+$web-font-path:           "";
+
+//== Chrome
+$navbar-default-bg:       #fdfdfd;
+$navbar-default-border:   $ria-crimson;
+$navbar-default-brand-color:        $ria-crimson;
+$navbar-default-brand-hover-color:  $ria-crimson-dark;
+$navbar-default-link-hover-color:   $ria-crimson;
+$navbar-default-link-active-color:  $ria-crimson;

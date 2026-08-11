@@ -1,10 +1,10 @@
 ---
 ---
-    
+
 @import "bootstrap";
 
-img { margin-bottom: 24px; 
-     margin-top: 17px; 
+img { margin-bottom: 24px;
+     margin-top: 17px;
     border-radius:2%;
 }
 
@@ -19,9 +19,174 @@ figcaption {
     margin-bottom: 20px;
 }
 
+/* Nothing should force the page wider than the viewport. */
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* ---------------------------------------------------------------
+   Typography & crimson accents
+   --------------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-palatino;
+}
+
+h1 {
+	color: $ria-crimson;
+	font-weight: normal;
+}
+
+h2 {
+	color: $gray-darker;
+	border-bottom: 1px solid $gray-lighter;
+	padding-bottom: 6px;
+	margin-top: 36px;
+}
+
+h3, h4 {
+	color: $gray-darker;
+}
+
+a {
+	transition: color 0.15s ease-in-out;
+}
+
+strong, b {
+	color: $gray-darker;
+}
+
+blockquote {
+	border-left: 4px solid $ria-crimson;
+	font-size: $font-size-base;
+}
+
+/* Tables written as plain markdown in a page (no Bootstrap classes). */
+#textid table,
+#gridid table {
+	width: 100%;
+	margin: 0 0 24px;
+	border-collapse: collapse;
+}
+
+#textid table th,
+#gridid table th {
+	text-align: left;
+	border-bottom: 2px solid $ria-crimson;
+	padding: 8px 14px 8px 0;
+}
+
+#textid table td,
+#gridid table td {
+	border-bottom: 1px solid $gray-lighter;
+	padding: 8px 14px 8px 0;
+	vertical-align: top;
+}
+
+#textid table td:first-child,
+#gridid table td:first-child {
+	white-space: nowrap;
+}
+
+/* Label / value blocks written as markdown definition lists. */
+dl.lab-facts {
+	margin-bottom: 24px;
+}
+
+dl.lab-facts dt {
+	float: left;
+	clear: left;
+	width: 130px;
+	font-weight: bold;
+	padding: 6px 0;
+}
+
+dl.lab-facts dd {
+	margin-left: 130px;
+	padding: 6px 0;
+	border-bottom: 1px solid $gray-lighter;
+}
+
+@media (max-width: 480px) {
+	dl.lab-facts dt { float: none; width: auto; padding-bottom: 0; }
+	dl.lab-facts dd { margin-left: 0; }
+}
+
+hr {
+	border-top: 1px solid $gray-lighter;
+}
+
+.ria-accent {
+	color: $ria-crimson;
+}
 
 
 /* Top navigation bar */
+
+.navbar-default {
+	border-bottom-width: 3px;
+}
+
+.navbar-default .navbar-brand {
+	font-weight: bold;
+	letter-spacing: 0.01em;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.navbar-brand img.brand-logo {
+	height: 34px;
+	width: auto;
+	margin: 0 10px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+/* Home page lab mark */
+#homeid img.lab-logo {
+	float: right;
+	width: 130px;
+	margin: 0 0 12px 24px;
+}
+
+@media (max-width: 480px) {
+	.navbar-brand img.brand-logo { height: 28px; margin-right: 7px; }
+	#homeid img.lab-logo { width: 90px; margin-left: 14px; }
+}
+
+/* Seven items in a 1000px container is tight; buy back some room. */
+.navbar-default .navbar-nav > li > a {
+	padding-left: 11px;
+	padding-right: 11px;
+	font-size: 15px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: $ria-crimson;
+	box-shadow: inset 0 -3px 0 $ria-crimson;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a {
+	font-size: 15px;
+	padding: 5px 18px;
+}
+
+.navbar-default .navbar-nav .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .dropdown-menu > li > a:focus {
+	color: $ria-crimson;
+	background-color: $gray-lighter;
+}
 
 
 p.byline {
@@ -34,7 +199,12 @@ p.byline {
 
 
 pubtit {
+	display: block;
 	font-weight: bold;
+	font-size: $font-size-large;
+	line-height: 1.3;
+	color: $ria-crimson;
+	margin-bottom: 10px;
 }
 
 firstp {
@@ -60,11 +230,47 @@ firstp {
 	margin-bottom: 6px;
 }
 
+#newsid .well {
+	border-left: 4px solid $ria-crimson;
+}
+
+#newsid h4 a {
+	color: $ria-crimson;
+}
+
 /* Team & Publications */
 #gridid img { margin: 16px 22px 6px 0; border-radius:10%; box-shadow: 2px 2px 5px #888888 }
 #homeid img { margin: 0 0 0 0; border-radius:5%; box-shadow: 0px 0px 0px #888888 }
 #picid img { margin: 6px 3px 60px 6px; border-radius:1%; box-shadow: 2px 2px 5px #888888 }
 #gridid .row { margin-bottom: 24px; }
+
+#gridid .well {
+	border-top: 3px solid $ria-crimson;
+}
+
+/* Team headshots: square-crop from the top so portraits of any aspect
+   ratio line up in a consistent grid. */
+#gridid img.team-photo {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	object-position: center top;
+	margin: 6px 22px 10px 0;
+	border-radius: 8%;
+}
+
+/* Keep a member's text in its own block-formatting context so lines sit
+   beside the floated photo instead of wrapping underneath it. */
+#gridid .member-meta {
+	overflow: hidden;
+}
+
+@media (max-width: 480px) {
+	#gridid img.team-photo {
+		width: 110px;
+		height: 110px;
+	}
+}
 
 
 /* Grid overrides */
@@ -81,6 +287,39 @@ firstp {
 }
 
 
+/* Footer */
+
+#footer .panel-footer {
+	border-top: 3px solid $ria-crimson;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+/* Social links (footer) */
+.social-links {
+	margin-bottom: 8px;
+}
+
+.social-links a {
+	display: inline-block;
+	margin: 0 14px 0 0;
+	color: $gray;
+	line-height: 0;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+	color: $ria-crimson;
+}
+
+.social-links svg {
+	width: 19px;
+	height: 19px;
+	fill: currentColor;
+	vertical-align: middle;
+}
+
+
 /* Carusel */
 
 .carousel {
@@ -90,4 +329,3 @@ firstp {
     margin-left: 30px;
     margin-right: 30px;
 }
-

@@ -1,11 +1,35 @@
-# Allan Lab Website
+# Reliable Interactive Autonomy (RIA) Lab
 
-This is the website of our academic research group at Leiden University.
+Website for the Reliable Interactive Autonomy Lab, led by [Michelle Zhao](https://michellezhao.net/) in the Luddy School of Informatics, Computing, and Engineering at Indiana University Bloomington.
 
-This website is powered by Jekyll and some Bootstrap, Bootwatch. We tried to make it simple yet adaptable, so that it is easy for you to use it as a template. Plese feel free to copy and modify for your own purposes.  You don't have to link to us or mention us (but of course we appreciate it).
+Published at <https://reliable-interactive-autonomy-lab.github.io/>.
 
-Go to *aboutwebsite.md*  to learn how to copy and modidy this page for your purpose. 
+## Editing
 
+Most updates are one-line edits to a data file in `_data/`:
 
-Copyright Allan Lab. Code released under the MIT License.
+| What | Where |
+| --- | --- |
+| News | `_data/news.yml` |
+| Publications | `_data/publist.yml` |
+| Faculty | `_data/team_members.yml` |
+| PhD students | `_data/phd_students.yml` |
+| Master's / undergraduate students | `_data/students.yml` |
+| Alumni | `_data/alumni_members.yml` |
 
+Page prose lives in `_pages/`. Colors and fonts are in `_sass/_ria-variables.scss`; other style overrides are in `css/main.scss`. Headshots go in `images/teampic/` — any portrait aspect ratio works, since CSS square-crops them from the top.
+
+See [`_pages/aboutwebsite.md`](_pages/aboutwebsite.md) for the longer version.
+
+## Running locally
+
+```
+bundle install
+bundle exec jekyll serve
+```
+
+Then open <http://localhost:4000>.
+
+## Credits
+
+Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), and [Bootswatch](https://bootswatch.com), adapted from the [Allan Lab group template](https://github.com/allanlab/allanlab). Code released under the MIT License.

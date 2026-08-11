@@ -7,18 +7,30 @@
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	  </button>
-	
-    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">Allan Lab @ Leiden &rarr; University of Munich (LMU)</a>
+
+    <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/"><img src="{{ site.url }}{{ site.baseurl }}/images/logopic/site-logo.png" alt="" class="brand-logo" />RIA Lab</a>
 	</div>
 	<div class="collapse navbar-collapse" id="navbar-collapse-1">
 	  <ul class="nav navbar-nav navbar-right">
 		<li><a href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/vacancies">Vacancies</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
 		<li><a href="{{ site.url }}{{ site.baseurl }}/research">Research</a></li>
-		<li><a href="{{ site.url }}{{ site.baseurl }}/teaching">Teaching</a></li>
-	<!-- li><a href="{{ site.url }}{{ site.baseurl }}/pictures">(Pics)</a></li> -->	
+		<li><a href="{{ site.url }}{{ site.baseurl }}/publications">Publications</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/team">Team</a></li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/teaching/">Teaching</a></li>
+		<li class="dropdown">
+		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lab Info <span class="caret"></span></a>
+		  <ul class="dropdown-menu">
+			<li><a href="{{ site.url }}{{ site.baseurl }}/reading-group/">HRI Reading Group</a></li>
+			<li><a href="{{ site.url }}{{ site.baseurl }}/photos/">Photos</a></li>
+			{% if site.social %}
+			<li role="separator" class="divider"></li>
+			{% for link in site.social %}{% if link.url %}
+			<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+			{% endif %}{% endfor %}
+			{% endif %}
+		  </ul>
+		</li>
+		<li><a href="{{ site.url }}{{ site.baseurl }}/join/">Join Us</a></li>
 	  </ul>
 	</div>
   </div>

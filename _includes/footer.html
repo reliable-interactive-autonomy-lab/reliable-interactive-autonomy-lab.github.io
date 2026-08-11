@@ -3,23 +3,18 @@
 	<div class="container-fluid">
 	  <div class="row">
 		<div class="col-sm-4">
-
-		  <p>&copy 2016 Allan Lab. Site made with <a href="https://jekyllrb.com">Jekyll</a>;  <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">copy and  modify it for your own research group.</a></p>
-              
-
-
-		   <p>  </p><p>
-
-
+		  {% include social.html %}
+		  <p>&copy; {{ site.time | date: "%Y" }} Reliable Interactive Autonomy Lab. Site made with <a href="https://jekyllrb.com">Jekyll</a>, from the <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">Allan Lab template</a>.</p>
 		</div>
 		<div class="col-sm-4">
-		<p>We are part of the <a href="https://www.physik.lmu.de/en//">Faculty of Physics</a> at the<a href="https://www.lmu.de"> University of Munich (LMU)</a>. We are still associated with the <a href="https://www.physics.leidenuniv.nl/">Leiden Institute of Physics</a>, where most of our instrument are.</p>
+		  <p>We are part of the <a href="https://luddy.indiana.edu/">Luddy School of Informatics, Computing, and Engineering</a> at <a href="https://www.indiana.edu/">Indiana University Bloomington</a>.</p>
 		</div>
 		<div class="col-sm-4">
 		  Contact:<br />
-Geschwister-Scholl-Platz 1<br />
-		  80539 München<br />
-		  Germany <br />
+		  <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+		  Luddy Hall<br />
+		  700 N. Woodlawn Ave.<br />
+		  Bloomington, IN 47408<br />
 		</div>
 	  </div>
 	</div>
