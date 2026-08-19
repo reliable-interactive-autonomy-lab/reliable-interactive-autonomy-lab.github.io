@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - News"
+title: "News"
+description: "News and announcements from the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington."
 layout: textlay
-excerpt: "News from the Reliable Interactive Autonomy Lab."
-sitemap: false
 permalink: /allnews.html
 ---
 

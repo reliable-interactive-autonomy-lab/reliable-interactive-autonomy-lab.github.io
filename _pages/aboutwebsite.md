@@ -1,9 +1,10 @@
 ---
 title: "About this website"
-layout: textlay
-excerpt: "About this website."
+description: "How the Reliable Interactive Autonomy (RIA) Lab website is built and maintained."
 sitemap: false
+layout: textlay
 permalink: /aboutwebsite.html
+noindex: true
 ---
 
 # About this website
@@ -18,7 +19,6 @@ Most routine updates only require editing a plain-text file in `_data/`:
 | --- | --- |
 | News items (home page + `/allnews.html`) | `_data/news.yml` |
 | Publications | `_data/publist.yml` |
-| Faculty | `_data/team_members.yml` |
 | PhD students | `_data/phd_students.yml` |
 | Master's and undergraduate students | `_data/students.yml` |
 | Alumni | `_data/alumni_members.yml` |
@@ -31,6 +31,36 @@ A few conventions specific to this site:
 - The nine most recent entries in `news.yml` appear in the home-page sidebar; the rest are on `/allnews.html`.
 - Team members without a `photo:` field render without an image, so people can be added before headshots exist. Headshots go in `images/teampic/` and are square-cropped from the top by CSS, so any portrait aspect ratio works.
 - A rotating image banner is available on the home page — drop images into `images/slider7001400/` and uncomment the carousel block in `_pages/home.md`.
+
+### Search visibility
+
+The site's identity — how it describes itself to Google and to anyone sharing a
+link — is configured in one place, `_config.yml`:
+
+| What | Where |
+| --- | --- |
+| Lab name, description, canonical URL | top of `_config.yml` |
+| Department / school / university names and links | `institution:`, `school:`, `department:` |
+| Director's name, title, and scholarly identifiers | `director:` |
+| Research topics used in metadata | `research_areas:` |
+
+Those values feed three things automatically: the `<title>`, description, and
+social-preview tags in `_includes/head.html`; the schema.org structured data in
+`_includes/structured-data.html`, which tells search engines that the RIA Lab is
+part of Indiana University and is directed by Michelle Zhao; and the identity
+block rendered by `_includes/director-card.html` on the home and team pages.
+
+Two per-page front-matter keys are available:
+
+- `description:` — the meta description for that page. Write one per page; it is
+  often what Google shows underneath the link.
+- `seo_title:` — overrides the `<title>` completely. Without it, the title is
+  built as `<page title> | RIA Lab, Indiana University Bloomington`.
+
+`sitemap: false` keeps a page out of `sitemap.xml`, and `noindex: true` asks
+search engines not to index it; both are set on the 404 and this page. Everything
+else is listed in `sitemap.xml`, which is generated on every build and pointed to
+from `robots.txt`.
 
 ### Theme
 

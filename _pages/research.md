@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Research"
+title: "Research"
+description: "Research in the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington: interactive robot learning, uncertainty quantification for learned policies, and human-robot collaboration."
 layout: textlay
-excerpt: "RIA Lab -- Research"
-sitemap: false
 permalink: /research/
 ---
 

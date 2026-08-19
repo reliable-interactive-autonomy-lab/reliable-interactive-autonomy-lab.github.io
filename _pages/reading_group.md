@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - HRI Reading Group"
+title: "HRI Reading Group"
+description: "The Human-Robot Interaction reading group at Indiana University Bloomington, hosted by the Reliable Interactive Autonomy (RIA) Lab: weekly discussion of recent work in HRI, interactive machine learning, and human-AI collaboration."
 layout: textlay
-excerpt: "Human-Robot Interaction reading group at Indiana University."
-sitemap: false
 permalink: /reading-group/
 ---
 

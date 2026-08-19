@@ -1,0 +1,29 @@
+{% comment %}
+  The lab director's identity block. Used on the home page and the team page so
+  that the name, affiliation, and scholarly identifiers appear identically in
+  both places. Every field comes from `director:` in _config.yml.
+
+  Kramdown runs with `parse_block_html: true`, so the markup below is
+  deliberately left-aligned: indenting it would make kramdown read the lines as
+  an indented code block. `markdown="0"` keeps it out of the markdown parser.
+{% endcomment %}
+<div class="director-card clearfix" markdown="0">
+<img src="{{ '/images/teampic/michelle_zhao.png' | relative_url }}" class="director-photo" alt="{{ site.director.name }}, Director of the Reliable Interactive Autonomy Lab" />
+<div class="director-meta">
+<p class="director-name"><a href="{{ site.director.website }}">{{ site.director.name }}</a>{% if site.director.suffix %}, {{ site.director.suffix }}{% endif %}</p>
+<p class="director-titles">
+{{ site.director.role }}<br />
+{{ site.director.title }}<br />
+<a href="{{ site.school.url }}">{{ site.school.name }}</a><br />
+<a href="{{ site.institution.url }}">{{ site.institution.name }}</a><br />
+<a href="mailto:{{ site.email }}">{{ site.email }}</a>
+</p>
+<p class="director-links">
+<a href="{{ site.director.website }}">Personal Website</a> &middot;
+<a href="{{ site.director.iu_profile }}">IU Profile</a> &middot;
+<a href="{{ site.director.scholar }}">Google Scholar</a> &middot;
+<a href="{{ site.director.orcid }}">ORCID</a> &middot;
+<a href="{{ site.director.dblp }}">DBLP</a>
+</p>
+</div>
+</div>

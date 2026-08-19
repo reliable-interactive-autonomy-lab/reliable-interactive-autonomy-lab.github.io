@@ -3,18 +3,25 @@
 	<div class="container-fluid">
 	  <div class="row">
 		<div class="col-sm-4">
+		  <p class="footer-affiliation">
+			<a href="{{ site.url }}{{ site.baseurl }}/"><strong>Reliable Interactive Autonomy (RIA) Lab</strong></a><br />
+			<a href="{{ site.department.url }}">{{ site.department.name }}</a><br />
+			<a href="{{ site.school.url }}">{{ site.school.name }}</a><br />
+			<a href="{{ site.institution.url }}">{{ site.institution.name }}</a>
+		  </p>
+		</div>
+		<div class="col-sm-4">
+		  <p>
+			Directed by <a href="{{ site.director.website }}">{{ site.director.name }}</a>,<br />
+			{{ site.director.title }}<br />
+			<a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
+			Luddy Hall, 700 N. Woodlawn Ave.<br />
+			Bloomington, IN 47408
+		  </p>
+		</div>
+		<div class="col-sm-4">
 		  {% include social.html %}
 		  <p>&copy; {{ site.time | date: "%Y" }} Reliable Interactive Autonomy Lab. Site made with <a href="https://jekyllrb.com">Jekyll</a>, from the <a href="{{ site.url }}{{ site.baseurl }}/aboutwebsite.html">Allan Lab template</a>.</p>
-		</div>
-		<div class="col-sm-4">
-		  <p>We are part of the <a href="https://luddy.indiana.edu/">Luddy School of Informatics, Computing, and Engineering</a> at <a href="https://www.indiana.edu/">Indiana University Bloomington</a>.</p>
-		</div>
-		<div class="col-sm-4">
-		  Contact:<br />
-		  <a href="mailto:{{ site.email }}">{{ site.email }}</a><br />
-		  Luddy Hall<br />
-		  700 N. Woodlawn Ave.<br />
-		  Bloomington, IN 47408<br />
 		</div>
 	  </div>
 	</div>

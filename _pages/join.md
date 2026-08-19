@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Join Us"
+title: "Join Us"
+description: "Open PhD, Master's, and undergraduate research positions in the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington."
 layout: textlay
-excerpt: "Open positions in the RIA Lab"
-sitemap: false
 permalink: /join/
 ---
 

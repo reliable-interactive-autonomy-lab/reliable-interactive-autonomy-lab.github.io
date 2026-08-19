@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Publications"
+title: "Publications"
+description: "Publications from the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington, on robot learning, human-robot interaction, conformal prediction, and human-AI collaboration."
 layout: gridlay
-excerpt: "RIA Lab -- Publications."
-sitemap: false
 permalink: /publications/
 ---
 

@@ -151,6 +151,91 @@ hr {
 	box-shadow: none;
 }
 
+/* Affiliation line under the home-page title */
+.lab-affiliation {
+	font-size: 15px;
+	line-height: 1.5;
+	color: $gray;
+	margin-top: -10px;
+	margin-bottom: 22px;
+}
+
+/* Institutional links are structural, not calls to action: keep them quiet
+   until hovered so they don't compete with the heading above them. */
+.lab-affiliation a,
+.footer-affiliation a,
+.director-card .director-titles a {
+	color: $gray;
+}
+
+.lab-affiliation a:hover,
+.lab-affiliation a:focus,
+.footer-affiliation a:hover,
+.footer-affiliation a:focus,
+.director-card .director-titles a:hover,
+.director-card .director-titles a:focus {
+	color: $ria-crimson;
+}
+
+.footer-affiliation a strong {
+	color: $ria-crimson;
+}
+
+
+/* Lab director identity block (home page + team page) */
+.director-card {
+	border-top: 3px solid $ria-crimson;
+	background-color: #fafafa;
+	padding: 18px 20px 6px;
+	margin-bottom: 24px;
+}
+
+.director-card img.director-photo {
+	float: left;
+	width: 130px;
+	height: 130px;
+	object-fit: cover;
+	object-position: center top;
+	margin: 0 22px 12px 0;
+	border-radius: 8%;
+}
+
+.director-card .director-meta {
+	overflow: hidden;
+}
+
+.director-card .director-name {
+	font-size: 21px;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.director-card .director-titles {
+	font-size: 15px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+.director-card .director-links {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+	.director-card img.director-photo {
+		width: 100px;
+		height: 100px;
+		margin-right: 16px;
+	}
+}
+
+
+/* Footer affiliation block */
+.footer-affiliation {
+	line-height: 1.6;
+}
+
+
 /* Home page lab mark */
 #homeid img.lab-logo {
 	float: right;

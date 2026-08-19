@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Teaching"
+title: "Teaching"
+description: "Courses taught by Michelle Zhao in the Department of Computer Science at Indiana University Bloomington, on robotics, human-robot interaction, and machine learning."
 layout: textlay
-excerpt: "Teaching"
-sitemap: false
 permalink: /teaching/
 ---
 

@@ -1,14 +1,16 @@
 ---
-title: "RIA Lab - Home"
+title: "Reliable Interactive Autonomy (RIA) Lab"
+seo_title: "Reliable Interactive Autonomy (RIA) Lab | Indiana University Bloomington"
+description: "The Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington, directed by Michelle Zhao, conducts research in robotics, human-robot interaction, robot learning, and reliable autonomous systems."
 layout: homelay
-excerpt: "Reliable Interactive Autonomy Lab at Indiana University Bloomington."
-sitemap: false
 permalink: /
 ---
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/site-logo.png" alt="RIA Lab logo" class="lab-logo" />
 
-We are the **Reliable Interactive Autonomy (RIA) Lab** in the [Luddy School of Informatics, Computing, and Engineering](https://luddy.indiana.edu/) at [Indiana University Bloomington](https://www.indiana.edu/).
+The **Reliable Interactive Autonomy (RIA) Lab** is a robotics research lab at [{{ site.institution.name }}]({{ site.institution.url }}), directed by [{{ site.director.name }}]({{ site.director.website }}), {{ site.director.title }} in the [{{ site.school.name }}]({{ site.school.url }}).
+
+Our research lies at the intersection of **robotics**, **human-robot interaction**, and **machine learning**, with a focus on developing robots that can reliably learn from, adapt to, and collaborate with people.
 
 We build robots and AI agents that **learn from the people they work with**, **know what they don't know**, and **collaborate reliably** over long horizons. Our work sits at the intersection of **interactive machine learning**, **uncertainty quantification**, and **human-robot interaction**.
 
@@ -19,6 +21,8 @@ Three questions drive us:
 - **How should a robot and a person align?** Collaboration is bidirectional. We study how robots can infer human strategies and preferences, and how they can explain their own behavior so people can predict and trust them.
 
 Our long-term goal is **lifelong, collaborative intelligence**: robotic partners that keep learning through strategic interaction with the people around them, across tasks and across years.
+
+Read more about our work on [interactive learning from human feedback]({{ site.baseurl }}/research/#interactive-learning-from-human-feedback), [uncertainty quantification for reliable autonomy]({{ site.baseurl }}/research/#uncertainty-quantification-for-reliable-autonomy), and [human-robot alignment and collaboration]({{ site.baseurl }}/research/#human-robot-alignment-and-collaboration), or browse the [full publication list]({{ site.baseurl }}/publications/).
 
 <!--
   To add a rotating image banner, drop images in images/slider7001400/ and
@@ -48,6 +52,10 @@ Our long-term goal is **lifelong, collaborative intelligence**: robotic partners
   </a>
 </div>
 -->
+
+### Lab Director
+
+{% include director-card.html %}
 
 ### We are recruiting!
 

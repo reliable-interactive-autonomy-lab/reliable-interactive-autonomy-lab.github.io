@@ -7,13 +7,62 @@
 
 # Site settings
 title: Reliable Interactive Autonomy Lab
+short_title: RIA Lab
 email: zhaomich@iu.edu
 description: > # this means to ignore newlines until "baseurl:"
   The Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington,
-  led by Michelle Zhao. We build robots and AI agents that learn from people,
-  know what they don't know, and collaborate reliably.
+  directed by Michelle Zhao, conducts research in robotics, human-robot
+  interaction, robot learning, and reliable autonomous systems.
 baseurl: ""
-url: ""
+# Canonical site URL. Every canonical link, Open Graph tag, sitemap entry, and
+# structured-data @id is built from this, so if the lab ever moves to a custom
+# domain (via a CNAME file), change it here too or search engines will keep
+# pointing at the old address.
+url: "https://reliable-interactive-autonomy-lab.github.io"
+
+# Paste the token from Google Search Console's "HTML tag" verification method
+# (just the content value, not the whole tag) to verify ownership of the site
+# and submit sitemap.xml. Left blank, no tag is emitted.
+google_site_verification: "5FTjwktMdQzbZ_afvQSV7XGu6V9cP21LhCCNGJY8zAM"
+
+# Image used for link previews (Open Graph / Twitter cards).
+og_image: /images/logopic/site-logo.png
+
+# Institutional affiliation. Used in the footer, page titles, and the
+# structured data that tells search engines how the lab relates to IU.
+institution:
+  name: Indiana University Bloomington
+  url: https://bloomington.iu.edu/
+school:
+  name: Luddy School of Informatics, Computing, and Engineering
+  url: https://luddy.iu.edu/
+department:
+  name: Department of Computer Science
+  url: https://luddy.iu.edu/academics/units/computer-science.html
+
+# The lab director. Rendered on the home page, the team page, and in the
+# Person structured data. Every URL here is a scholarly identifier that helps
+# search engines merge these profiles into one entity.
+director:
+  name: Michelle Zhao
+  suffix: Ph.D.
+  role: Director, Reliable Interactive Autonomy Lab
+  title: Assistant Professor of Computer Science
+  website: https://michellezhao.net/
+  iu_profile: https://luddy.iu.edu/people/zhao-michelle.html
+  scholar: https://scholar.google.com/citations?user=Gu4eXZwAAAAJ&hl=en
+  orcid: https://orcid.org/0000-0001-7522-2300
+  dblp: https://dblp.org/pid/332/1115.html
+
+# Research topics, emitted as `knowsAbout` / `keywords` in structured data.
+research_areas:
+  - Robotics
+  - Human-robot interaction
+  - Robot learning
+  - Interactive machine learning
+  - Uncertainty quantification
+  - Human-AI collaboration
+  - Reliable autonomous systems
 
 # Lab social links, shown in the footer.
 # Uncomment an entry once the account exists; entries without a `url` are
@@ -41,6 +90,9 @@ social:
 include:
   - .htaccess
   - _pages
+
+plugins:
+  - jekyll-sitemap
 
 sass:
   sass_dir: _sass

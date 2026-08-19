@@ -2,12 +2,65 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon-32.png" | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="apple-touch-icon" href="{{ "/images/apple-touch-icon.png" | prepend: site.baseurl | prepend: site.url }}">
+
+  {%- comment -%}
+    Title. A page can set `seo_title` in its front matter to control the tag
+    exactly; otherwise the page title is suffixed with the lab abbreviation and
+    the university, so every search result and browser tab carries the full
+    identity rather than a bare "Research".
+  {%- endcomment -%}
+  {%- if page.seo_title -%}
+    {%- assign seo_title = page.seo_title -%}
+  {%- elsif page.title -%}
+    {%- capture seo_title %}{{ page.title }} | {{ site.short_title }}, {{ site.institution.name }}{% endcapture -%}
+  {%- else -%}
+    {%- capture seo_title %}{{ site.title }} | {{ site.institution.name }}{% endcapture -%}
+  {%- endif -%}
+
+  {%- comment -%} Description: page-level `description` wins, then `excerpt`, then the site default. {%- endcomment -%}
+  {%- if page.description -%}
+    {%- assign seo_description = page.description -%}
+  {%- elsif page.excerpt -%}
+    {%- assign seo_description = page.excerpt | strip_html | strip_newlines | truncate: 300 -%}
+  {%- else -%}
+    {%- assign seo_description = site.description -%}
+  {%- endif -%}
+  {%- assign seo_description = seo_description | strip_newlines | strip -%}
+
+  {%- assign canonical_url = page.url | replace:'index.html','' | absolute_url -%}
+  {%- assign og_image_url = page.image | default: site.og_image | absolute_url -%}
+
+  <title>{{ seo_title | escape }}</title>
+  <meta name="description" content="{{ seo_description | escape }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+{%- if page.noindex %}
+  <meta name="robots" content="noindex, follow">
+{%- endif %}
+  <meta name="author" content="{{ site.director.name }}">
+  <meta name="keywords" content="{{ site.research_areas | join: ', ' }}, RIA Lab, Reliable Interactive Autonomy Lab, {{ site.institution.name }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title }} ({{ site.short_title }})">
+  <meta property="og:title" content="{{ seo_title | escape }}">
+  <meta property="og:description" content="{{ seo_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ og_image_url }}">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | escape }}">
+  <meta name="twitter:image" content="{{ og_image_url }}">
+
+{%- if site.google_site_verification and site.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/images/favicon-32.png" | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ "/images/apple-touch-icon.png" | relative_url }}">
+
+  {% include structured-data.html %}
 
 {% if jekyll.environment == 'production' %}
 {% include analytics.html %}

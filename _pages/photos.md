@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Photos"
+title: "Photos"
+description: "Photos from the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington."
 layout: gridlay
-excerpt: "Photos from the Reliable Interactive Autonomy Lab."
-sitemap: false
 permalink: /photos/
 ---
 

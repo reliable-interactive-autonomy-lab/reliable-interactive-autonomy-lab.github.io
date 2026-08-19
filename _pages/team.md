@@ -1,8 +1,7 @@
 ---
-title: "RIA Lab - Team"
+title: "Team"
+description: "People of the Reliable Interactive Autonomy (RIA) Lab at Indiana University Bloomington: director Michelle Zhao, Assistant Professor of Computer Science, and the lab's PhD, Master's, and undergraduate researchers."
 layout: gridlay
-excerpt: "RIA Lab: Team members"
-sitemap: false
 permalink: /team/
 ---
 
@@ -13,62 +12,10 @@ permalink: /team/
 Jump to [faculty](#faculty), [PhD students](#phd-students), [Master's and undergraduate students](#master-and-undergraduate-students).
 
 ## Faculty
-{% assign number_printed = 0 %}
-{% for member in site.data.team_members %}
 
-{% assign even_odd = number_printed | modulo: 2 %}
+The RIA Lab is directed by [{{ site.director.name }}]({{ site.director.website }}), {{ site.director.title }} in the [{{ site.school.name }}]({{ site.school.url }}) at [{{ site.institution.name }}]({{ site.institution.url }}).
 
-{% if even_odd == 0 %}
-<div class="row">
-{% endif %}
-
-<div class="col-sm-6 clearfix">
-  {% if member.photo %}
-  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" style="float: left" />
-  {% endif %}
-  <div class="member-meta">
-  <h4>{{ member.name }}</h4>
-  <i>{{ member.info }}</i>
-  {% if member.email %}<br><i>{{ member.email }}</i>{% endif %}
-  {% if member.links %}<br>{{ member.links }}{% endif %}
-  </div>
-  <ul style="overflow: hidden">
-
-  {% if member.number_educ >= 1 %}
-  <li> {{ member.education1 | markdownify | remove: '<p>' | remove: '</p>' }} </li>
-  {% endif %}
-
-  {% if member.number_educ >= 2 %}
-  <li> {{ member.education2 | markdownify | remove: '<p>' | remove: '</p>' }} </li>
-  {% endif %}
-
-  {% if member.number_educ >= 3 %}
-  <li> {{ member.education3 | markdownify | remove: '<p>' | remove: '</p>' }} </li>
-  {% endif %}
-
-  {% if member.number_educ >= 4 %}
-  <li> {{ member.education4 | markdownify | remove: '<p>' | remove: '</p>' }} </li>
-  {% endif %}
-
-  {% if member.number_educ >= 5 %}
-  <li> {{ member.education5 | markdownify | remove: '<p>' | remove: '</p>' }} </li>
-  {% endif %}
-
-  </ul>
-</div>
-
-{% assign number_printed = number_printed | plus: 1 %}
-
-{% if even_odd == 1 %}
-</div>
-{% endif %}
-
-{% endfor %}
-
-{% assign even_odd = number_printed | modulo: 2 %}
-{% if even_odd == 1 %}
-</div>
-{% endif %}
+{% include director-card.html %}
 
 
 ## PhD Students
