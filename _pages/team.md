@@ -13,8 +13,6 @@ Jump to [faculty](#faculty), [PhD students](#phd-students), [Master's and underg
 
 ## Faculty
 
-The RIA Lab is directed by [{{ site.director.name }}]({{ site.director.website }}), {{ site.director.title }} in the [{{ site.school.name }}]({{ site.school.url }}) at [{{ site.institution.name }}]({{ site.institution.url }}).
-
 {% include director-card.html %}
 
 
@@ -65,7 +63,7 @@ The lab is actively recruiting. If that could be you, please [get in touch]({{ s
 {% endif %}
 
 
-## Master and Undergraduate Students
+## Masters Students
 
 {% if site.data.students %}
 {% assign number_printed = 0 %}
