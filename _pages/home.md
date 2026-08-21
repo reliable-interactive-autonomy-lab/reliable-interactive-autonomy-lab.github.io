@@ -8,7 +8,7 @@ permalink: /
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/site-logo.png" alt="RIA Lab logo" class="lab-logo" />
 
-The **Reliable Interactive Autonomy (RIA) Lab** is a robotics research lab at [{{ site.institution.name }}]({{ site.institution.url }}), directed by [{{ site.director.name }}]({{ site.director.website }}), {{ site.director.title }} in the [{{ site.school.name }}]({{ site.school.url }}).
+The **Reliable Interactive Autonomy (RIA) Lab** is a robotics research lab in the [{{ site.school.name }}]({{ site.school.url }}) at [{{ site.institution.name }}]({{ site.institution.url }}).
 
 Our research lies at the intersection of **robotics**, **human-robot interaction**, and **machine learning**, with a focus on developing robots that can reliably learn from, adapt to, and collaborate with people.
 
