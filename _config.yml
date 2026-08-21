@@ -46,7 +46,9 @@ department:
 director:
   name: Michelle Zhao
   suffix: Ph.D.
-  role: Director, Reliable Interactive Autonomy Lab
+  # role: optional line above the academic title on the director card.
+  # Left unset so the card shows only the academic title and affiliation.
+  # role: Director, Reliable Interactive Autonomy Lab
   title: Assistant Professor of Computer Science
   website: https://michellezhao.net/
   iu_profile: https://luddy.iu.edu/people/zhao-michelle.html
