@@ -78,11 +78,19 @@ The lab is actively recruiting. If that could be you, please [get in touch]({{ s
 {% endif %}
 
 <div class="col-sm-6 clearfix">
+  {% if member.photo %}
+  <img src="{{ site.url }}{{ site.baseurl }}/images/teampic/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" style="float: left" />
+  {% endif %}
+  <div class="member-meta">
   <h4>{{ member.name }}</h4>
   <i>{{ member.info }}</i>
+  {% if member.email %}<br><i>{{ member.email }}</i>{% endif %}
+  {% if member.links %}<br>{{ member.links }}{% endif %}
+  {% if member.bio %}<p style="margin-top: 8px">{{ member.bio }}</p>{% endif %}
+  </div>
   <ul style="overflow: hidden">
-  {% if member.number_educ >= 1 %}<li> {{ member.education1 }} </li>{% endif %}
-  {% if member.number_educ >= 2 %}<li> {{ member.education2 }} </li>{% endif %}
+  {% if member.number_educ >= 1 %}<li> {{ member.education1 | markdownify | remove: '<p>' | remove: '</p>' }} </li>{% endif %}
+  {% if member.number_educ >= 2 %}<li> {{ member.education2 | markdownify | remove: '<p>' | remove: '</p>' }} </li>{% endif %}
   </ul>
 </div>
 

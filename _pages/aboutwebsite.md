@@ -48,7 +48,7 @@ Those values feed three things automatically: the `<title>`, description, and
 social-preview tags in `_includes/head.html`; the schema.org structured data in
 `_includes/structured-data.html`, which tells search engines that the RIA Lab is
 part of Indiana University and is directed by Michelle Zhao; and the identity
-block rendered by `_includes/director-card.html` on the home and team pages.
+block rendered by `_includes/director-card.html` on the team page.
 
 Two per-page front-matter keys are available:
 

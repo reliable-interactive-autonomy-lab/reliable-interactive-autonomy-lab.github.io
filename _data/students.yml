@@ -1,5 +1,19 @@
 # Master's and undergraduate researchers.
-# Uncomment and duplicate this block for each student.
+# `photo:` is a filename in images/teampic/ and is optional.
+
+- name: Sunny Qiao
+  photo: sunny_qiao.jpg
+  info: Second-year HCI Master student, Department of Informatics, Fall 2026
+  email: qiao [at] iu.edu
+  bio: >
+    I am a second-year M.S. student in the Human-Computer Interaction/design program
+    at Indiana University Bloomington. My background is in human-centered research,
+    interaction design, and prototyping, with experience building and evaluating
+    interactive and embodied systems. My research interests span human-robot
+    interaction, end-user customization and personalization of robotic systems, and
+    understanding users&rsquo; needs, preferences, and interactions with robots.
+
+# Duplicate the block above for each additional student.
 #
 #- name: Student Name
 #  info: Undergraduate researcher, started Fall 2026

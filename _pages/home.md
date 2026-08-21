@@ -53,10 +53,6 @@ Read more about our work on [interactive learning from human feedback]({{ site.b
 </div>
 -->
 
-### Lab Director
-
-{% include director-card.html %}
-
 ### We are recruiting!
 
 Our first PhD students join in Fall 2026, and **we are looking for more PhD students, Master's students, and undergraduates** who are excited about robotics, interactive machine learning, and human-AI interaction. See [how to join us]({{ site.url }}{{ site.baseurl }}/join/) for details.
