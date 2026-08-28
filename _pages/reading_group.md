@@ -14,10 +14,10 @@ The HRI Reading Group at Indiana University is an open, weekly discussion of rec
 ### Logistics
 
 When
-: Thursdays, 3:00pm-4:00pm Eastern Time Zone
+: Fridays, 10:00am-11:00am Eastern Time Zone
 
 Where
-: Luddy AI Conference Room 2053 - BLLU 3053
+: Luddy AI Center, Conference Room 3053
 
 Format
 : The HRI Reading Group uses a variety of formats to encourage discussion and engagement with current research. For standard paper discussions, one person leads a ~30-minute walkthrough of a selected paper, followed by an open group discussion. We also host invited speakers who share and discuss their recent work, as well as conference retrospectives highlighting interesting papers, talks, and emerging themes from recent HRI-related conferences.
