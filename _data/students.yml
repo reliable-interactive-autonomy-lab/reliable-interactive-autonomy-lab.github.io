@@ -13,6 +13,17 @@
     interaction, end-user customization and personalization of robotic systems, and
     understanding users&rsquo; needs, preferences, and interactions with robots.
 
+
+- name: JeongTak Cho
+  photo: jeongtak_cho.jpg
+  info: Second-year HCI Master student, Department of Informatics, Fall 2026
+  email: jtcho [at] iu.edu
+  bio: >
+    I am a second-year M.S. student in the Human-Computer Interaction/design program
+    at Indiana University Bloomington. My background is in computer science and
+    informatics, and my research interests are in human-robot interaction, immersive
+    technologies, and user-centered design.
+
 # Duplicate the block above for each additional student.
 #
 #- name: Student Name
