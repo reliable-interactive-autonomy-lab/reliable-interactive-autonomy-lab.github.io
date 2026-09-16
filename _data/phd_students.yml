@@ -3,10 +3,10 @@
 
 - name: Mihir Parekh
   photo: mihir_parekh.jpeg
-  info: Incoming PhD student, Department of Computer Science, Fall 2026
+  info: First-year PhD student, Department of Computer Science, Fall 2026
   email: mihparek [at] iu.edu
   bio: >
-    I am an incoming Ph.D. student in the Department of Computer Science at Indiana
+    I am a first-year Ph.D. in the Department of Computer Science at Indiana
     University Bloomington. I received my B.S. and M.S. in Computer Science from the
     University of Massachusetts Lowell, where I was a member of the Assistive Robotics
     &amp; Accessibility Lab and the Emergent Dynamics, Controls, &amp; Analytics Lab.
@@ -15,8 +15,9 @@
 
 - name: Jiahe Liu
   photo: jiahe_liu.jpg
-  info: Incoming PhD student, Department of Computer Science, Fall 2026
+  info: First-year PhD student, Department of Computer Science, Fall 2026
   email: jl456 [at] iu.edu
   bio: >
-    I am an incoming Ph.D. student in Computer Science at Indiana University
-    Bloomington, joining the lab in Fall 2026.
+    I am a first-year Ph.D. student in Computer Science at Indiana University
+    Bloomington. My research interests include human-robot interaction, interactive
+    robot learning, and uncertainty-aware robot learning.
