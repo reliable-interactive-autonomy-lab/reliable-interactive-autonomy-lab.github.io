@@ -65,9 +65,9 @@ The lab is actively recruiting. If that could be you, please [get in touch]({{ s
 
 ## Masters Students
 
-{% if site.data.students %}
+{% if site.data.master_students %}
 {% assign number_printed = 0 %}
-{% for member in site.data.students %}
+{% for member in site.data.master_students %}
 
 {% assign even_odd = number_printed | modulo: 2 %}
 
