@@ -20,7 +20,7 @@ Most routine updates only require editing a plain-text file in `_data/`:
 | News items (home page + `/allnews.html`) | `_data/news.yml` |
 | Publications | `_data/publist.yml` |
 | PhD students | `_data/phd_students.yml` |
-| Master's and undergraduate students | `_data/students.yml` |
+| Master's and undergraduate students | `_data/master_students.yml` |
 | Alumni | `_data/alumni_members.yml` |
 
 Page prose lives in `_pages/`. YAML is whitespace-sensitive, so match the indentation of the surrounding entries exactly and check the build after each change.
