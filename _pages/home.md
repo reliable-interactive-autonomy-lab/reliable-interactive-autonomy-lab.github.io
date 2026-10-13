@@ -10,7 +10,7 @@ permalink: /
 
 The **Reliable Interactive Autonomy (RIA) Lab** is a robotics research lab at [{{ site.institution.name }}]({{ site.institution.url }}).
 
-We develop robots and AI agents that **learn from the people they work with**, **know what they don't know**, and **collaborate reliably** over long horizons. Our work sits at the intersection of **interactive machine learning**, **uncertainty quantification**, and **human-robot interaction**.
+We develop robots and AI agents that **learn from the people they work with**, **know what they don't know**, and **collaborate reliably** over long horizons. Our work sits at the intersection of **interactive learning**, **uncertainty quantification**, and **human-robot interaction**.
 
 Three questions drive us:
 
