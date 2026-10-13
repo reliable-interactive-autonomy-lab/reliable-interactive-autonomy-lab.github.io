@@ -405,6 +405,44 @@ firstp {
 }
 
 
+/* Collapsible sections: <details> dropdowns get a caret that rotates open.
+   Bootstrap's normalize sets `summary { display: block }`, which hides the
+   browser's native disclosure triangle, so we draw our own. */
+
+details {
+	margin-bottom: 15px;
+}
+
+details > summary {
+	cursor: pointer;
+	list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+	display: none;
+}
+
+details > summary::before {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 7px solid $ria-crimson;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	margin-right: 9px;
+	transition: transform 0.15s ease;
+}
+
+details[open] > summary::before {
+	transform: rotate(90deg);
+}
+
+details > summary:hover {
+	color: $ria-crimson;
+}
+
+
 /* Carusel */
 
 .carousel {

@@ -9,8 +9,6 @@ permalink: /photos/
 
 {% if site.data.photos %}
 
-Lab life, conferences, demos, and the occasional robot behaving unexpectedly.
-
 <div id="picid">
 {% assign number_printed = 0 %}
 {% for pic in site.data.photos %}
@@ -23,7 +21,7 @@ Lab life, conferences, demos, and the occasional robot behaving unexpectedly.
 
 <div class="col-sm-4">
   <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/{{ pic.file }}" class="img-responsive" alt="{{ pic.caption }}" />
-  {% if pic.caption %}<figcaption>{{ pic.caption }}</figcaption>{% endif %}
+  {% if pic.caption %}<figcaption markdown="span">{{ pic.caption }}</figcaption>{% endif %}
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}

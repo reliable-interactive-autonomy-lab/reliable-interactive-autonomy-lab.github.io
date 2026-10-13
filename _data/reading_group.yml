@@ -1,14 +1,69 @@
-# HRI Reading Group schedule. Newest or next-up first.
-# While this file has no uncommented entries, the reading group page shows a
-# "schedule coming soon" note instead of an empty table.
-#
-#- date: Sep 4, 2026
-#  title: "Conformalized Interactive Imitation Learning"
-#  venue: ICLR 2025
-#  link: https://arxiv.org/abs/2410.08852
-#  leader: Mihir Parekh
-#
-#- date: Sep 11, 2026
-#  title: "Some Paper Without a Link"
-#  venue: RSS 2026
-#  leader: Jiahe Liu
+# HRI Reading Group schedule.
+# `upcoming`: future sessions, soonest first. The first entry is featured as
+# "Next up" on the page; the rest render in the "Later this semester" table
+# (sessions without a `title` show as TBD).
+# `past`: grouped by semester, newest semester first, newest session first.
+# When a session happens, move it from `upcoming` to the top of its semester
+# under `past`.
+# The live schedule is maintained in the Google Sheet linked as `sheet`.
+
+sheet: https://docs.google.com/spreadsheets/d/1rVs5eknxl5XIymRm80dtkbyZa2GFTNGNN_1aEmqovnY/edit?gid=0#gid=0
+
+upcoming:
+  - date: Oct 16, 2026
+    title: "PREFAIL: Identifying Precursors to Failures in Robotic Lift-and-Place Tasks to Improve Task Execution Performance"
+    venue: arXiv 2026
+    link: https://arxiv.org/abs/2607.16921
+    leader: Jiahe Liu
+
+  - date: Oct 23, 2026
+    leader: Pradyumna Satheesh
+
+  - date: Oct 30, 2026
+    leader: JeongTak Cho
+
+  - date: Nov 6, 2026
+    leader: Mihir Parekh
+
+  - date: Nov 13, 2026
+    leader: Jiahe Liu
+
+  - date: Nov 20, 2026
+    leader: Pradyumna Satheesh
+
+  - date: Nov 27, 2026
+    leader: Sunny Qiao
+
+  - date: Dec 4, 2026
+    leader: Pradyumna Satheesh
+
+  - date: Dec 11, 2026
+    leader: JeongTak Cho
+
+  - date: Dec 18, 2026
+    leader: Mihir Parekh
+
+past:
+  - semester: Fall 2026
+    sessions:
+      - date: Sep 18, 2026
+        title: "INQUIRE: INteractive Querying for User-aware Informative REasoning"
+        venue: CoRL 2022
+        link: https://proceedings.mlr.press/v205/fitzgerald23a/fitzgerald23a.pdf
+        leader: Sunny Qiao
+
+      - date: Sep 11, 2026
+        title: "Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners (KnowNo)"
+        venue: CoRL 2023
+        link: https://arxiv.org/pdf/2307.01928
+        leader: Mihir Parekh
+
+      - date: Sep 4, 2026
+        title: "Conformalized Interactive Imitation Learning: Handling Expert Shift and Intermittent Feedback"
+        venue: ICLR 2025
+        link: https://arxiv.org/abs/2410.08852
+        leader: Sunny Qiao
+
+      - date: Aug 28, 2026
+        title: "Overview discussion: Human-Robot Co-Adaptation & Alignment"
+        leader: Michelle Zhao

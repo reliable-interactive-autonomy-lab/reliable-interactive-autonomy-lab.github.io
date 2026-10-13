@@ -9,7 +9,6 @@ permalink: /team/
 
 **We are looking for PhD students, Master's students, and undergraduates to join the lab** [(see how to join)]({{ site.url }}{{ site.baseurl }}/join/) **!**
 
-Jump to [faculty](#faculty), [PhD students](#phd-students), [Master's and undergraduate students](#master-and-undergraduate-students).
 
 ## Faculty
 

@@ -1,9 +1,15 @@
 # Lab photos. Put the image files in images/picpic/ and list them here.
 # While this file has no uncommented entries, the photos page shows a
 # placeholder note instead of an empty grid.
-#
-#- file: lab_kickoff.jpg
-#  caption: First lab meeting, Fall 2026
-#
-#- file: rss2026.jpg
-#  caption: The lab at RSS 2026
+
+- file: mihir_iros2026_poster.jpg
+  caption: Mihir Parekh presenting at the Human-Robot Dialogue workshop at IROS 2026
+
+- file: jiahe_iros2026_poster.jpg
+  caption: Jiahe Liu presenting at the Rethinking Uncertainty for Modern Robotics Paradigms workshop at IROS 2026
+
+- file: iros2026_iuxhri_social_1.jpg
+  caption: The IUxHRI Social at IROS 2026
+
+- file: iros2026_iuxhri_social_2.jpg
+  caption: IU Robotics at IROS 2026

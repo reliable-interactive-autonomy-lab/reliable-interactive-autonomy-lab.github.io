@@ -1,7 +1,26 @@
 # Publication list for the RIA Lab.
 # `highlight: 1` promotes an entry to the "Selected work" grid on the
 # publications page. Add `image: filename.png` (in images/pubpic/) to show a
-# thumbnail; entries without an image render fine.
+# thumbnail; entries without an image render fine. Add `pdf: filename.pdf`
+# (in downloads/) to link a local PDF.
+
+- title: "Why Did the Robot Fail? Causal Concept Bottlenecks for Failure Detection and Explanation"
+  description: Failure detectors can tell a robot that something went wrong, but not why. We ground failure prediction in causal concept bottleneck models, using vision-language models to extract failure-relevant concepts and their causal structure from rollout videos, so the robot can explain which concepts drove a predicted failure and reason counterfactually about what would change the outcome.
+  authors: Mihir Parekh, Michelle Zhao
+  link:
+    url: https://human-robot-dialogue.github.io/
+    display: Workshop on Human-Robot Dialogue at IROS, 2026
+  pdf: parekh2026_causal_failure_explanation.pdf
+  highlight: 1
+
+- title: "Show Me What You See: Communicating Visuomotor Policy Attention for Interactive Robot Learning"
+  description: Human teachers correcting a robot observe its behavior, but not the visual representations driving its policy. We characterize what a visuomotor policy's internal attention encodes across task stages, failures, and interventions, and use it to give teachers stage-relevant visual guidance during interactive corrections.
+  authors: Jiahe Liu, Michelle Zhao
+  link:
+    url: https://rethinking-uncertainty.github.io/
+    display: Workshop on Rethinking Uncertainty for Modern Robotics Paradigms at IROS, 2026
+  pdf: liu2026_visuomotor_attention.pdf
+  highlight: 1
 
 - title: "Optimal Interactive Learning on the Job via Facility Location Planning"
   description: Collaborative robots must keep adapting to new tasks and user preferences without overburdening the person they work with. We cast multi-task interactive learning as a facility location problem, planning a sequence of human interventions that is near-optimal across a whole stream of tasks rather than greedy on the current one.
@@ -12,7 +31,7 @@
   highlight: 1
 
 - title: "Conformalized Interactive Imitation Learning: Handling Expert Shift and Intermittent Feedback"
-  description: Uncertainty quantification lets a robot ask for help when it leaves familiar territory — but standard conformal prediction assumes exchangeable data, which interactive imitation learning violates on two fronts. We give a calibration method that stays statistically valid when the expert's own behavior shifts and when feedback arrives only intermittently.
+  description: When feedback arrives only intermittently, robots can use conformal prediction to ensure their uncertainty estimates are well-calibrated, so they can know when to trust their learned policy and when to ask for more guidance in interactive imitation learning.
   authors: Michelle Zhao, Reid Simmons, Henny Admoni, Aaditya Ramdas, Andrea Bajcsy
   link:
     url: https://arxiv.org/abs/2410.08852
@@ -44,12 +63,24 @@
   highlight: 1
 
 - title: "Coordination with Humans via Strategy Matching"
-  description: Rather than expecting people to adapt to the robot, we infer a partner's high-level strategy from a handful of observed actions and adapt the robot's policy to match it.
+  description: In human-robot collaborative settings, we infer a human partner's high-level strategy from a handful of observed actions and adapt the robot's policy to match it.
   authors: Michelle Zhao, Reid Simmons, Henny Admoni
   link:
     url: https://arxiv.org/abs/2210.15099
     display: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022
   highlight: 1
+
+- title: "Integrating Learning and Collaboration for Human-Robot Alignment"
+  authors: Michelle Zhao
+  link:
+    display: PhD thesis, Carnegie Mellon University, 2026
+  highlight: 0
+
+- title: "Lifelong Learning and Personalization in Long-Term Human-Robot Interaction (LEAP-HRI): Evolving Assistance for Everyday Life"
+  authors: Bahar Irfan, Nikhil Churamani, Michelle Zhao, Rajat Kumar Jenamani, Ali Ayub, Silvia Rossi
+  link:
+    display: Companion of the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2026
+  highlight: 0
 
 - title: "Bi-Directional Mental Model Reconciliation for Human-Robot Interaction with Large Language Models"
   authors: Nina Moorman, Michelle Zhao, Matthew B. Luebbers, Sanne Van Waveren, Reid Simmons, Henny Admoni, Sonia Chernova, Matthew Gombolay
@@ -64,6 +95,18 @@
     display: International Conference on Agents and Artificial Intelligence (ICAART), 2025
   highlight: 0
 
+- title: "Lifelong Learning and Personalization in Long-Term Human-Robot Interaction (LEAP-HRI): Overcoming Inequalities with Adaptation"
+  authors: Bahar Irfan, Nikhil Churamani, Michelle Zhao, Ali Ayub, Silvia Rossi
+  link:
+    display: Companion of the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2025
+  highlight: 0
+
+- title: "HRI'24: Workshop on Aging in Place"
+  authors: Nina M. Moorman, Michelle Zhao, Henny Admoni, Reid Simmons, Matthew Gombolay
+  link:
+    display: Companion of the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024
+  highlight: 0
+
 - title: "The Role of Adaptation in Collective Human-AI Teaming"
   authors: Michelle Zhao, Fade R. Eadeh, Thuy-Ngoc Nguyen, Pranav Gupta, Henny Admoni, Cleotilde Gonzalez, Anita Williams Woolley
   link:
@@ -74,4 +117,17 @@
   authors: Michelle Zhao, Fade R. Eadeh, Thuy-Ngoc Nguyen, Pranav Gupta, Henny Admoni, Cleotilde Gonzalez, Anita Williams Woolley
   link:
     display: Computers in Human Behavior, 2022
+  highlight: 0
+
+- title: "Adapting Language Complexity for AI-Based Assistance"
+  authors: Michelle Zhao, Reid Simmons, Henny Admoni
+  link:
+    display: Lifelong Learning Workshop at the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2021
+  highlight: 0
+
+- title: "Distributed Control of an Evolving Satellite Assembly During In-Orbit Construction"
+  authors: Rebecca Foust, Michelle Zhao, Suzanne Oliver, Soon-Jo Chung, Fred Y. Hadaegh
+  link:
+    url: https://authors.library.caltech.edu/records/fe3er-haq75
+    display: International Astronautical Congress (IAC), 2017
   highlight: 0

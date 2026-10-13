@@ -4,4 +4,6 @@ _site
 .jekyll-cache
 .DS_Store
 vendor/
-vendor/
+# Staging folders for originals; web-ready copies go in downloads/ and images/picpic/
+papers/
+photos/

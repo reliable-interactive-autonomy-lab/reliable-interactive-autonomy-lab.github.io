@@ -8,7 +8,7 @@ permalink: /publications/
 
 # Publications
 
-**A full and continuously updated list is available on [Google Scholar](https://scholar.google.com/citations?user=Gu4eXZwAAAAJ&hl=en). The [complete list](#full-list-of-publications) is also at the bottom of this page.**
+A more complete list is available on [Google Scholar](https://scholar.google.com/citations?user=Gu4eXZwAAAAJ&hl=en).
 
 ## Selected work
 
@@ -31,9 +31,9 @@ permalink: /publications/
   <p>{{ publi.description }}</p>
   <p><em>{{ publi.authors }}</em></p>
   {% if publi.link.url %}
-  <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
+  <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong>{% if publi.pdf %} &middot; <a href="{{ site.url }}{{ site.baseurl }}/downloads/{{ publi.pdf }}">[PDF]</a>{% endif %}</p>
   {% else %}
-  <p><strong>{{ publi.link.display }}</strong></p>
+  <p><strong>{{ publi.link.display }}</strong>{% if publi.pdf %} &middot; <a href="{{ site.url }}{{ site.baseurl }}/downloads/{{ publi.pdf }}">[PDF]</a>{% endif %}</p>
   {% endif %}
   {% if publi.news1 %}<p class="text-danger"><strong>{{ publi.news1 }}</strong></p>{% endif %}
   {% if publi.news2 %}<p>{{ publi.news2 }}</p>{% endif %}
@@ -59,14 +59,19 @@ permalink: /publications/
 
 ## Full list of publications
 
-{% for publi in site.data.publist %}
+<details>
+<summary markdown="span"><strong>Click to expand the full publication list</strong></summary>
 
+{% for publi in site.data.publist %}
+<p>
   {{ publi.title }} <br />
   <em>{{ publi.authors }}</em><br />
-  {% if publi.link.url %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% else %}{{ publi.link.display }}{% endif %}
-
+  {% if publi.link.url %}<a href="{{ publi.link.url }}">{{ publi.link.display }}</a>{% else %}{{ publi.link.display }}{% endif %}{% if publi.pdf %} &middot; <a href="{{ site.url }}{{ site.baseurl }}/downloads/{{ publi.pdf }}">[PDF]</a>{% endif %}
+</p>
 {% endfor %}
 
-<p> &nbsp; </p>
+<p><em>* denotes equal contribution.</em></p>
 
-<em>* denotes equal contribution.</em>
+</details>
+
+<p> &nbsp; </p>
