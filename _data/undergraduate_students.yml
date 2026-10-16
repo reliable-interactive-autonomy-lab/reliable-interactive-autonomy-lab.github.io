@@ -1,0 +1,11 @@
+# Undergraduate researchers.
+# `photo:` is a path relative to images/ and is optional.
+
+- name: Josh Kraus
+  photo: Josh_headshot.jpg
+  info: Fourth-year undergraduate student, Data Science Program, Fall 2026
+  email: kraus [at] iu.edu
+  bio: >
+    I am a graduating senior of Indiana University Bloomington's Data Science program.
+    My background includes statistics, data science, and systems engineering, and my
+    research interests are in user integration, survey evaluation, and live data analysis.
