@@ -122,7 +122,7 @@ Openings for Master's and undergraduate researchers are described on the [join p
 
 <div class="col-sm-6 clearfix">
   {% if member.photo %}
-  <img src="{{ site.url }}{{ site.baseurl }}/images/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" style="float: left" />
+  <img src="{{ site.url }}{{ site.baseurl }}/images/headshots/{{ member.photo }}" class="team-photo" alt="{{ member.name }}" style="float: left" />
   {% endif %}
   <div class="member-meta">
   <h4>{{ member.name }}</h4>
